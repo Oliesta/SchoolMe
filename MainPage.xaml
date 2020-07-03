@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SchoolMe"
+             x:Class="SchoolMe.MainPage">
+    StackLayout Margin="20">
+        ...
+    <Frame BorderColor="Black"
+               Padding="5">
+        <StackLayout Orientation="Horizontal"
+                         Spacing="15">
+            <BoxView Color="Red" />
+            <Label Text="In This App You can select and register a child by district"
+                       FontSize="Large"
+                       VerticalOptions="Center" />
+        </StackLayout>
+    </Frame>
+    <Frame BorderColor="Black"
+               Padding="5">
+        <StackLayout Orientation="Horizontal"
+                         Spacing="15">
+            <BoxView Color="More info about the app" />
+            <Label Text="Yellow"
+                       FontSize="Large"
+                       VerticalOptions="Center" />
+        </StackLayout>
+    </Frame>
+    </StackLayout>
+</ContentPage>

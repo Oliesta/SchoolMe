@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SchoolMe.ProvinceSelect">
+
+    <StackLayout Orientation="Vertical">
+
+        <SearchBar x:Name="SearchButton" SearchButtonPressed="Handle_SearchButtonPressed"
+                   TextChanged="Handle_TextChanged"></SearchBar>
+        <Grid>
+            <ListView x:Name="ProvinceListView" />
+            <ListView x:Name="SuggestionListView"
+                      ItemTapped="Handle_ItemTapped"/>
+
+        </Grid>
+
+
+
+        <Picker x:Name="ProvincePicker" Title="Select Province"
+            SelectedIndexChanged="ProvincePicker_SelectedIndexChanged"/>
+</ContentView>
